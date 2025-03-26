@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthPaySecure - Honest Supplement Reviews</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .section-padding {
+            padding-top: 60px;
+        }
+        .review-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-heartbeat text-green-600 text-3xl mr-2"></i>
+                <h1 class="text-xl font-bold text-green-600">HealthPaySecure</h1>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-green-600 transition-colors">Home</a></li>
+                    <li><a href="#about" class="hover:text-green-600 transition-colors">About</a></li>
+                    <li><a href="#weight-loss" class="hover:text-green-600 transition-colors">Weight Loss</a></li>
+                    <li><a href="#joint-health" class="hover:text-green-600 transition-colors">Joint Health</a></li>
+                    <li><a href="#mens-health" class="hover:text-green-600 transition-colors">Men's Health</a></li>
+                    <li><a href="#methodology" class="hover:text-green-600 transition-colors">Our Process</a></li>
+                    <li><a href="#faq" class="hover:text-green-600 transition-colors">FAQ</a></li>
+                </ul>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white w-full">
+            <ul class="px-4 py-2">
+                <li><a href="#home" class="block py-2 hover:text-green-600 transition-colors">Home</a></li>
+                <li><a href="#about" class="block py-2 hover:text-green-600 transition-colors">About</a></li>
+                <li><a href="#weight-loss" class="block py-2 hover:text-green-600 transition-colors">Weight Loss</a></li>
+                <li><a href="#joint-health" class="block py-2 hover:text-green-600 transition-colors">Joint Health</a></li>
+                <li><a href="#mens-health" class="block py-2 hover:text-green-600 transition-colors">Men's Health</a></li>
+                <li><a href="#methodology" class="block py-2 hover:text-green-600 transition-colors">Our Process</a></li>
+                <li><a href="#faq" class="block py-2 hover:text-green-600 transition-colors">FAQ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 bg-gradient-to-r from-green-50 to-blue-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-800">Honest Reviews for Health Supplements</h1>
+                    <p class="text-xl mb-6 text-gray-600">We analyze supplements so you don't have to. Unbiased reviews focused on effectiveness, value, and safety.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#weight-loss" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">Weight Loss Reviews</a>
+                        <a href="#methodology" class="bg-white hover:bg-gray-100 text-green-600 font-semibold py-3 px-6 rounded-lg border border-green-600 transition-colors">Our Review Process</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1577041249022-26cc744ddda3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Health supplements" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">About HealthPaySecure</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We're dedicated to providing honest, research-backed reviews of health supplements. We don't sell products - we just help you make informed decisions.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-search text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Research-Based</h3>
+                    <p class="text-gray-600">We analyze scientific studies and clinical trials to verify supplement claims.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-dollar-sign text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Value Analysis</h3>
+                    <p class="text-gray-600">We compare prices, money-back guarantees, and overall value for your investment.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Safety First</h3>
+                    <p class="text-gray-600">We prioritize supplements with proven safety records and minimal side effects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weight Loss Section -->
+    <section id="weight-loss" class="py-16 bg-gray-50 section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Weight Loss Supplements</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our comprehensive reviews of the most popular weight loss supplements on the market.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden review-card transition-all">
+                    <img src="https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Weight loss supplement" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold">PhenQ</h3>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">A multi-action formula designed to burn fat, suppress appetite, and boost energy levels.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-green-600 font-semibold">$69.95</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">60-day money back</span>
+                        </div>
+                        <a href="#" class="block text-center bg-green-600 hover:bg-green-700 text-white font-medium py-2 rounded transition-colors">Read Full Review</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden review-card transition-all">
+                    <img src="https://images.pexels.com/photos/3621168/pexels-photo-3621168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Weight loss supplement" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold">Leanbean</h3>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="far fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">A female-focused formula with appetite suppressants and metabolism boosters.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-green-600 font-semibold">$59.99</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">90-day money back</span>
+                        </div>
+                        <a href="#" class="block text-center bg-green-600 hover:bg-green-700 text-white font-medium py-2 rounded transition-colors">Read Full Review</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden review-card transition-all">
+                    <img src="https://images.pexels.com/photos/4498362/pexels-photo-4498362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Weight loss supplement" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold">Instant Knockout</h3>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">Originally designed for fighters, this supplement targets stubborn fat while preserving muscle.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-green-600 font-semibold">$65.00</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">30-day money back</span>
+                        </div>
+                        <a href="#" class="block text-center bg-green-600 hover:bg-green-700 text-white font-medium py-2 rounded transition-colors">Read Full Review</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Joint Health Section -->
+    <section id="joint-health" class="py-16 bg-white section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Joint Health Supplements</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Relief for knee pain, arthritis, and other joint issues - find what really works.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden review-card transition-all">
+                    <img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Joint health supplement" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold">Flexitrinol</h3>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">A comprehensive joint formula with glucosamine, chondroitin, and MSM for pain relief.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-green-600 font-semibold">$49.99</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">90-day money back</span>
+                        </div>
+                        <a href="#" class="block text-center bg-green-600 hover:bg-green-700 text-white font-medium py-2 rounded transition-colors">Read Full Review</a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden review-card transition-all">
+                    <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Joint health supplement" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold">Turmeric Curcumin Plus</h3>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="far fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">Natural anti-inflammatory with BioPerine for enhanced absorption and joint pain relief.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-green-600 font-semibold">$23.95</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">60-day money back</span>
+                        </div>
+                        <a href="#" class="block text-center bg-green-600 hover:bg-green-700 text-white font-medium py-2 rounded transition-colors">Read Full Review</a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden review-card transition-all">
+                    <img src="https://images.pexels.com/photos/4021808/pexels-photo-4021808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Joint health supplement" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold">Omega XL</h3>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                                <i class="far fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">Concentrated omega-3 complex from green-lipped mussels for joint inflammation.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-green-600 font-semibold">$39.95</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">30-day money back</span>
+                        </div>
+                        <a href="#" class="block text-center bg-green-600 hover:bg-green-700 text-white font-medium py-2 rounded transition-colors">Read Full Review</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Men's Health Section -->
+    <section id="mens-health" class="py-16 bg-gray-50 section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Men's Health Supplements</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Honest reviews of supplements for men's health concerns, including performance and vitality.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden review-card transition-all">
+                    <img src="https://images.pexels.com/photos/4397840/pexels-photo-4397840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Men's health supplement" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold">VigRX Plus</h3>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">Clinically tested formula for improved performance, stamina, and satisfaction.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-green-600 font-semibold">$69.95</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">67-day money back</span>
+                        </div>
+                        <a href="#" class="block text-center bg-green-600 hover:bg-green-700 text-white font-medium py-2 rounded transition-colors">Read Full Review</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden review-card transition-all">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Men's health supplement" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold">TestoFuel</h3>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">Natural testosterone booster with D-Aspartic Acid, vitamin D, and oyster extract.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-green-600 font-semibold">$59.00</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">90-day money back</span>
+                        </div>
+                        <a href="#" class="block text-center bg-green-600 hover:bg-green-700 text-white font-medium py-2 rounded transition-colors">Read Full Review</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden review-card transition-all">
+                    <img src="https://images.pexels.com/photos/4506109/pexels-photo-4506109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Men's health supplement" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold">ProSolution Plus</h3>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="far fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">Clinically studied formula for improved control and satisfaction with Tribulus Terrestris.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-green-600 font-semibold">$69.95</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">67-day money back</span>
+                        </div>
+                        <a href="#" class="block text-center bg-green-600 hover:bg-green-700 text-white font-medium py-2 rounded transition-colors">Read Full Review</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology" class="py-16 bg-white section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Our Review Process</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">How we evaluate supplements to ensure you get honest, accurate information.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1576671081837-49000212a370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Research process" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div>
+                    <div class="mb-8">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-green-100 w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-green-600 font-bold">1</span>
+                            </div>
+                            <h3 class="text-xl font-semibold">Ingredient Analysis</h3>
+                        </div>
+                        <p class="text-gray-600 pl-14">We research each ingredient for scientific backing, optimal dosages, and potential side effects.</p>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-green-100 w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-green-600 font-bold">2</span>
+                            </div>
+                            <h3 class="text-xl font-semibold">Clinical Studies Review</h3>
+                        </div>
+                        <p class="text-gray-600 pl-14">We examine peer-reviewed research and clinical trials to verify manufacturer claims.</p>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-green-100 w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-green-600 font-bold">3</span>
+                            </div>
+                            <h3 class="text-xl font-semibold">Value Assessment</h3>
+                        </div>
+                        <p class="text-gray-600 pl-14">We compare pricing, guarantees, and overall value to help you make the best financial decision.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center mb-3">
+                            <div class="bg-green-100 w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-green-600 font-bold">4</span>
+                            </div>
+                            <h3 class="text-xl font-semibold">User Experience Analysis</h3>
+                        </div>
+                        <p class="text-gray-600 pl-14">We gather real user feedback and testimonials to provide a complete picture of each supplement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-50 section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Common questions about supplements and our review process.</p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-6 bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-5 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">Do you sell supplements on this website?</h3>
+                            <i class="fas fa-chevron-down text-green-600 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5">
+                        <p class="text-gray-600">No, we do not sell any supplements. We are an independent review site that provides unbiased information about supplements to help consumers make informed decisions.</p>
+                    </div>
+                </div>
+                <div class="mb-6 bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-5 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">How do you make money if you don't sell products?</h3>
+                            <i class="fas fa-chevron-down text-green-600 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5">
+                        <p class="text-gray-600">We earn revenue through affiliate marketing. When you click on certain links to supplement websites and make a purchase, we may receive a small commission. This helps us maintain our site, but it never affects our reviews or ratings. Our opinions remain independent and unbiased.</p>
+                    </div>
+                </div>
+                <div class="mb-6 bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-5 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">Are money-back guarantees reliable?</h3>
+                            <i class="fas fa-chevron-down text-green-600 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5">
+                        <p class="text-gray-600">Most reputable supplement companies honor their money-back guarantees, but terms vary widely. We carefully review the fine print of these guarantees to help you understand what to expect. Always keep your receipts and packaging, and be aware of time limitations.</p>
+                    </div>
+                </div>
+                <div class="mb-6 bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-5 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">How do I know if a supplement is right for me?</h3>
+                            <i class="fas fa-chevron-down text-green-600 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5">
+                        <p class="text-gray-600">While our reviews provide comprehensive information, it's always best to consult with a healthcare professional before starting any supplement regimen, especially if you have existing health conditions or take medications. Everyone's body is different, and what works for one person may not work for another.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-5 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">How often do you update your reviews?</h3>
+                            <i class="fas fa-chevron-down text-green-600 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5">
+                        <p class="text-gray-600">We update our reviews regularly as formulations change, new research emerges, or when companies update their policies. We strive to provide the most current information possible, but always check the manufacturer's website for the most up-to-date details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-heartbeat text-green-400 text-2xl mr-2"></i>
+                        <h2 class="text-xl font-bold">HealthPaySecure</h2>
+                    </div>
+                    <p class="text-gray-400 mb-4">Honest supplement reviews to help you make informed health decisions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#methodology" class="text-gray-400 hover:text-white transition-colors">Our Process</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Supplement Categories</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#weight-loss" class="text-gray-400 hover:text-white transition-colors">Weight Loss</a></li>
+                        <li><a href="#joint-health" class="text-gray-400 hover:text-white transition-colors">Joint Health</a></li>
+                        <li><a href="#mens-health" class="text-gray-400 hover:text-white transition-colors">Men's Health</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Women's Health</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <p class="text-gray-400 mb-2">Have questions about a supplement?</p>
+                    <a href="mailto:info@healthpaysecure.live" class="text-green-400 hover:text-green-300 transition-colors">info@healthpaysecure.live</a>
+                    <p class="text-gray-400 mt-4 text-sm">
+                        Disclaimer: The information provided on this site is for informational purposes only and is not intended as a substitute for advice from your physician or healthcare provider.
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 HealthPaySecure.live. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // FAQ toggles
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+                
+                // Close other FAQs
+                faqToggles.forEach(otherToggle => {
+                    if (otherToggle !== toggle) {
+                        const otherContent = otherToggle.nextElementSibling;
+                        const otherIcon = otherToggle.querySelector('i');
+                        
+                        otherContent.classList.add('hidden');
+                        otherIcon.classList.remove('rotate-180');
+                    }
+                });
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
